@@ -1,0 +1,113 @@
+name: cluster
+
+topology:
+  nodes:
+    ceos1:
+      kind: ceos
+      image: ceoslab:4.31.0F
+      ports:
+      - 4001:6030
+      - 4444:443
+      - 888:80
+      - 6040:6040
+      startup-config: configs/ceos1.conf
+      mgmt_ipv4: 172.20.20.2
+      publish:
+        - tcp/4001
+    ceos2:
+      kind: ceos
+      image: ceoslab:4.31.0F
+      ports:
+      - 4002:6030
+      - 4445:443
+      - 889:80
+      - 6041:6040
+      startup-config: configs/ceos2.conf
+      mgmt_ipv4: 172.20.20.3
+      publish:
+        - tcp/4002
+    ceos3:
+      kind: ceos
+      image: ceoslab:4.31.0F
+      ports:
+      - 4003:6030
+      - 4446:443
+      - 890:80
+      - 6042:6040
+      startup-config: configs/ceos3.conf
+      mgmt_ipv4: 172.20.20.4
+      publish:
+        - tcp/4003
+    gnmic1:
+      kind: linux
+      image: ghcr.io/openconfig/gnmic:latest
+      binds:
+        - ./gnmic.yaml:/app/gnmic.yaml:ro
+        - ./targets-config.yaml:/app/targets-config.yaml:ro
+        - /var/run/docker.sock:/var/run/docker.sock
+      ports:
+        - 7890:7890
+      env:
+        GNMIC_API: :7890
+        GNMIC_CLUSTERING_INSTANCE_NAME: clab-cluster-gnmic1
+        GNMIC_CLUSTERING_SERVICE_ADDRESS: clab-cluster-gnmic1
+        GNMIC_OUTPUTS_AGGREGATOR_LISTEN: clab-cluster-gnmic1
+      cmd: '--config /app/gnmic.yaml subscribe'
+
+    gnmic2:
+      kind: linux
+      image: ghcr.io/openconfig/gnmic:latest
+      binds:
+        - ./gnmic.yaml:/app/gnmic.yaml:ro
+        - ./targets-config.yaml:/app/targets-config.yaml:ro
+        - /var/run/docker.sock:/var/run/docker.sock
+      ports:
+        - 7891:7891
+      env:
+        GNMIC_API: :7891
+        GNMIC_CLUSTERING_INSTANCE_NAME: clab-cluster-gnmic2
+        GNMIC_CLUSTERING_SERVICE_ADDRESS: clab-cluster-gnmic2
+        GNMIC_OUTPUTS_AGGREGATOR_LISTEN: clab-cluster-gnmic2
+      cmd: '--config /app/gnmic.yaml subscribe'
+
+    gnmic3:
+      kind: linux
+      image: ghcr.io/openconfig/gnmic:latest
+      binds:
+        - ./gnmic.yaml:/app/gnmic.yaml:ro
+        - ./targets-config.yaml:/app/targets-config.yaml:ro
+        - /var/run/docker.sock:/var/run/docker.sock
+      ports:
+        - 7892:7892
+      env:
+        GNMIC_API: :7892
+        GNMIC_CLUSTERING_INSTANCE_NAME: clab-cluster-gnmic3
+        GNMIC_CLUSTERING_SERVICE_ADDRESS: clab-cluster-gnmic3
+        GNMIC_OUTPUTS_AGGREGATOR_LISTEN: clab-cluster-gnmic3
+      cmd: '--config /app/gnmic.yaml subscribe'
+
+    consul-agent:
+      kind: linux
+      image: consul:latest
+      ports:
+        - 8500:8500
+        - 8600:8600/udp
+      cmd: 'agent -server -ui -bind=127.0.0.1 -node=server-1 -bootstrap-expect=1 -client=0.0.0.0'
+
+    prometheus:
+      kind: linux
+      image: prom/prometheus:latest
+      user: 65534:65534
+      ports:
+        - 9090:9090
+      binds:
+        - ./prometheus/:/etc/prometheus/
+      cmd: |
+        --config.file=/etc/prometheus/prometheus.yaml
+        --web.console.libraries=/usr/share/prometheus/console_libraries
+        --web.console.templates=/usr/share/prometheus/consoles
+        --log.level=debug
+
+  links:
+    - endpoints: ["ceos1:eth1", "ceos2:eth1"]
+    - endpoints: ["ceos2:eth2", "ceos3:eth1"]

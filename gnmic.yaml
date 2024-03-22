@@ -1,0 +1,54 @@
+# © 2022 Nokia.
+#
+# This code is a Contribution to the gNMIc project (“Work”) made under the Google Software Grant and Corporate Contributor License Agreement (“CLA”) and governed by the Apache License 2.0.
+# No other rights or licenses in or to any of Nokia’s intellectual property are granted for any other purpose.
+# This code is provided on an “as is” basis without any warranties of any kind.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+username: admin
+password: admin
+skip-verify: true
+encoding: json_ietf
+log: true
+
+api-server:
+  enable-metrics: true
+  address: :7890
+  debug: true
+
+loader:
+  type: file
+  # path to the file
+  path: ./app/targets-config.yaml
+  # watch interval at which the file
+  # is read again to determine if a target was added or deleted.
+  interval: 30s
+  # if true, registers fileLoader prometheus metrics with the provided
+  # prometheus registry
+  enable-metrics: false
+
+
+subscriptions:
+  # Add subscriptions configuration here
+  # e.g:
+  sub1:
+    paths:
+      - /interfaces/interface/state/counters
+    #stream-mode: sample
+    sample-interval: 10s
+
+# clustering config
+clustering:
+  cluster-name: cluster
+  #listen: "clab-lab110-gnmic:9804"
+  targets-watch-timer: 30s
+  locker:
+    type: consul
+    address: clab-cluster-consul-agent:8500
+
+outputs:
+    simple-prom:
+      type: prometheus
+      service-registration:
+        address: clab-cluster-consul-agent:8500

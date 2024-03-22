@@ -1,0 +1,8 @@
+172.20.20.2:6030:
+    username: admin
+    password: admin
+    insecure: true
+172.20.20.3:6030:
+    username: admin
+    password: admin
+    insecure: true
