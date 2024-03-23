@@ -108,7 +108,12 @@ func (c RestClient) GetLeader() (string, error) {
 		return "", err
 	}
 
-	return LeaderModel.Leader, nil
+	if !strings.HasPrefix(LeaderModel.Leader, "http://") {
+		return "http://" + LeaderModel.Leader + ":7890", nil
+	} else {
+		return LeaderModel.Leader, nil
+	}
+
 }
 
 func (c RestClient) PostTarget(Dev models.NewTarget) {
