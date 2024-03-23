@@ -80,7 +80,6 @@ func (c RestClient) GetTargetData() []models.Target {
 	for _, target := range TargetSlice {
 		c.Url = c.Url + "/" + target
 		_ = json.Unmarshal(c.MakeRestCall("GET", nil), &TargetData)
-		//fmt.Println(TargetData)
 		Targets = append(Targets, TargetData)
 		c.Url = strings.ReplaceAll(c.Url, "/"+target, "")
 	}
