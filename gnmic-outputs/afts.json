@@ -1,0 +1,598 @@
+
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897187557,
+  "time": "2022-05-12T10:05:33.897187557-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=172.20.20.0/24]/prefix",
+      "values": {
+        "network-instances/network-instance/afts/ipv4-unicast/ipv4-entry/prefix": "172.20.20.0/24"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897244583,
+  "time": "2022-05-12T10:05:33.897244583-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=10.0.0.0/24]/prefix",
+      "values": {
+        "network-instances/network-instance/afts/ipv4-unicast/ipv4-entry/prefix": "10.0.0.0/24"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897422605,
+  "time": "2022-05-12T10:05:33.897422605-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=21474836485]/next-hops/next-hop[index=7001068232597371485]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/next-hops/next-hop/index": 7001068232597371485
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897563036,
+  "time": "2022-05-12T10:05:33.897563036-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=7001068232597371485]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 7001068232597371485
+      }
+    },
+    {
+      "Path": "ip-address",
+      "values": {
+        "ip-address": "10.0.0.2"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897335993,
+  "time": "2022-05-12T10:05:33.897335993-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967298]/state/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/state/id": 4294967298
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897302731,
+  "time": "2022-05-12T10:05:33.897302731-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/ipv6-unicast/ipv6-entry[prefix=2001:172:20:20::/64]/state",
+  "updates": [
+    {
+      "Path": "next-hop-group",
+      "values": {
+        "next-hop-group": 72057598332895237
+      }
+    },
+    {
+      "Path": "prefix",
+      "values": {
+        "prefix": "2001:172:20:20::/64"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897328029,
+  "time": "2022-05-12T10:05:33.897328029-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967298]/next-hops/next-hop[index=9832892650124912434]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 9832892650124912434
+      }
+    },
+    {
+      "Path": "weight",
+      "values": {
+        "weight": 1
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897254031,
+  "time": "2022-05-12T10:05:33.897254031-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=10.0.0.0/24]/state",
+  "updates": [
+    {
+      "Path": "next-hop-group",
+      "values": {
+        "next-hop-group": 4294967303
+      }
+    },
+    {
+      "Path": "prefix",
+      "values": {
+        "prefix": "10.0.0.0/24"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897403870,
+  "time": "2022-05-12T10:05:33.89740387-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=72057598332895237]/state/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/state/id": 72057598332895237
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897317259,
+  "time": "2022-05-12T10:05:33.897317259-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967298]/next-hops/next-hop[index=9832892650124912434]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/next-hops/next-hop/index": 9832892650124912434
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897539052,
+  "time": "2022-05-12T10:05:33.897539052-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=7001068232597371485]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/index": 7001068232597371485
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897437713,
+  "time": "2022-05-12T10:05:33.897437713-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=21474836485]/next-hops/next-hop[index=7001068232597371485]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 7001068232597371485
+      }
+    },
+    {
+      "Path": "weight",
+      "values": {
+        "weight": 1
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897575079,
+  "time": "2022-05-12T10:05:33.897575079-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=5572930868439189906]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/index": 5572930868439189906
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897393481,
+  "time": "2022-05-12T10:05:33.897393481-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=72057598332895237]/next-hops/next-hop[index=5572930868439189906]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 5572930868439189906
+      }
+    },
+    {
+      "Path": "weight",
+      "values": {
+        "weight": 1
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897459844,
+  "time": "2022-05-12T10:05:33.897459844-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=9832892650124912434]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/index": 9832892650124912434
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897585869,
+  "time": "2022-05-12T10:05:33.897585869-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=5572930868439189906]/interface-ref/state/interface",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/interface-ref/state/interface": "Management0"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897351352,
+  "time": "2022-05-12T10:05:33.897351352-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967303]/next-hops/next-hop[index=2380381826821612125]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/next-hops/next-hop/index": 2380381826821612125
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897412817,
+  "time": "2022-05-12T10:05:33.897412817-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=21474836485]/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/id": 21474836485
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897487345,
+  "time": "2022-05-12T10:05:33.897487345-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=9832892650124912434]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 9832892650124912434
+      }
+    },
+    {
+      "Path": "ip-address",
+      "values": {
+        "ip-address": "0.0.0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897309995,
+  "time": "2022-05-12T10:05:33.897309995-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967298]/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/id": 4294967298
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897261194,
+  "time": "2022-05-12T10:05:33.897261194-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=2.2.2.2/32]/prefix",
+      "values": {
+        "network-instances/network-instance/afts/ipv4-unicast/ipv4-entry/prefix": "2.2.2.2/32"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897526208,
+  "time": "2022-05-12T10:05:33.897526208-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=2380381826821612125]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 2380381826821612125
+      }
+    },
+    {
+      "Path": "ip-address",
+      "values": {
+        "ip-address": "0.0.0.0"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897500440,
+  "time": "2022-05-12T10:05:33.89750044-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=2380381826821612125]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/index": 2380381826821612125
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897471846,
+  "time": "2022-05-12T10:05:33.897471846-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=9832892650124912434]/interface-ref/state/interface",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/interface-ref/state/interface": "Management0"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897236077,
+  "time": "2022-05-12T10:05:33.897236077-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=172.20.20.0/24]/state",
+  "updates": [
+    {
+      "Path": "next-hop-group",
+      "values": {
+        "next-hop-group": 4294967298
+      }
+    },
+    {
+      "Path": "prefix",
+      "values": {
+        "prefix": "172.20.20.0/24"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897359848,
+  "time": "2022-05-12T10:05:33.897359848-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967303]/next-hops/next-hop[index=2380381826821612125]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 2380381826821612125
+      }
+    },
+    {
+      "Path": "weight",
+      "values": {
+        "weight": 1
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897373714,
+  "time": "2022-05-12T10:05:33.897373714-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=72057598332895237]/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/id": 72057598332895237
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897286702,
+  "time": "2022-05-12T10:05:33.897286702-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=2.2.2.2/32]/state/prefix",
+      "values": {
+        "network-instances/network-instance/afts/ipv4-unicast/ipv4-entry/state/prefix": "2.2.2.2/32"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897380466,
+  "time": "2022-05-12T10:05:33.897380466-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=72057598332895237]/next-hops/next-hop[index=5572930868439189906]/index",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/next-hops/next-hop/index": 5572930868439189906
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897549191,
+  "time": "2022-05-12T10:05:33.897549191-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=7001068232597371485]/interface-ref/state/interface",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/interface-ref/state/interface": "Ethernet1"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897345050,
+  "time": "2022-05-12T10:05:33.89734505-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967303]/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/id": 4294967303
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897599304,
+  "time": "2022-05-12T10:05:33.897599304-04:00",
+  "prefix": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=5572930868439189906]/state",
+  "updates": [
+    {
+      "Path": "index",
+      "values": {
+        "index": 5572930868439189906
+      }
+    },
+    {
+      "Path": "ip-address",
+      "values": {
+        "ip-address": "::"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897450276,
+  "time": "2022-05-12T10:05:33.897450276-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=21474836485]/state/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/state/id": 21474836485
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897293294,
+  "time": "2022-05-12T10:05:33.897293294-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv6-unicast/ipv6-entry[prefix=2001:172:20:20::/64]/prefix",
+      "values": {
+        "network-instances/network-instance/afts/ipv6-unicast/ipv6-entry/prefix": "2001:172:20:20::/64"
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897276873,
+  "time": "2022-05-12T10:05:33.897276873-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/ipv4-unicast/ipv4-entry[prefix=2.2.2.2/32]/state/next-hop-group",
+      "values": {
+        "network-instances/network-instance/afts/ipv4-unicast/ipv4-entry/state/next-hop-group": 21474836485
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897367592,
+  "time": "2022-05-12T10:05:33.897367592-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hop-groups/next-hop-group[id=4294967303]/state/id",
+      "values": {
+        "network-instances/network-instance/afts/next-hop-groups/next-hop-group/state/id": 4294967303
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652364333",
+  "timestamp": 1652364333897511200,
+  "time": "2022-05-12T10:05:33.8975112-04:00",
+  "updates": [
+    {
+      "Path": "network-instances/network-instance[name=default]/afts/next-hops/next-hop[index=2380381826821612125]/interface-ref/state/interface",
+      "values": {
+        "network-instances/network-instance/afts/next-hops/next-hop/interface-ref/state/interface": "Ethernet1"
+      }
+    }
+  ]
+}
+
+received signal 'interrupt'. terminating...

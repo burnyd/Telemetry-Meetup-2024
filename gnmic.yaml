@@ -35,6 +35,8 @@ subscriptions:
   sub1:
     paths:
       - /interfaces/interface/state/counters
+      - /network-instances/network-instance/protocols/protocol/bgp
+      - eos_native:/Kernel/proc/meminfo
     #stream-mode: sample
     sample-interval: 10s
 

@@ -1,0 +1,57 @@
+[
+  {
+    "timestamp": 1652364069495365115,
+    "time": "2022-05-12T10:01:09.495365115-04:00",
+    "prefix": "eos_native:Kernel/proc/cpu/utilization/total",
+    "updates": [
+      {
+        "Path": "name",
+        "values": {
+          "name": "total"
+        }
+      },
+      {
+        "Path": "irq",
+        "values": {
+          "irq": 0
+        }
+      },
+      {
+        "Path": "nice",
+        "values": {
+          "nice": 500182
+        }
+      },
+      {
+        "Path": "util",
+        "values": {
+          "util": 14
+        }
+      },
+      {
+        "Path": "user",
+        "values": {
+          "user": 266860057
+        }
+      },
+      {
+        "Path": "system",
+        "values": {
+          "system": 186008865
+        }
+      },
+      {
+        "Path": "idle",
+        "values": {
+          "idle": 294305215
+        }
+      },
+      {
+        "Path": "softirq",
+        "values": {
+          "softirq": 68850678
+        }
+      }
+    ]
+  }
+]

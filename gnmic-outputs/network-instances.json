@@ -1,0 +1,564 @@
+[
+  {
+    "timestamp": 1652364237395780352,
+    "time": "2022-05-12T10:03:57.395780352-04:00",
+    "updates": [
+      {
+        "Path": "network-instances",
+        "values": {
+          "network-instances": {
+            "openconfig-network-instance:network-instance": [
+              {
+                "afts": {
+                  "ipv4-unicast": {
+                    "ipv4-entry": [
+                      {
+                        "prefix": "172.20.20.0/24",
+                        "state": {
+                          "next-hop-group": "4294967298",
+                          "prefix": "172.20.20.0/24"
+                        }
+                      },
+                      {
+                        "prefix": "10.0.0.0/24",
+                        "state": {
+                          "next-hop-group": "4294967303",
+                          "prefix": "10.0.0.0/24"
+                        }
+                      },
+                      {
+                        "prefix": "2.2.2.2/32",
+                        "state": {
+                          "next-hop-group": "21474836485",
+                          "prefix": "2.2.2.2/32"
+                        }
+                      }
+                    ]
+                  },
+                  "ipv6-unicast": {
+                    "ipv6-entry": [
+                      {
+                        "prefix": "2001:172:20:20::/64",
+                        "state": {
+                          "next-hop-group": "72057598332895237",
+                          "prefix": "2001:172:20:20::/64"
+                        }
+                      }
+                    ]
+                  },
+                  "next-hop-groups": {
+                    "next-hop-group": [
+                      {
+                        "id": "4294967298",
+                        "next-hops": {
+                          "next-hop": [
+                            {
+                              "index": "9832892650124912434",
+                              "state": {
+                                "index": "9832892650124912434",
+                                "weight": "1"
+                              }
+                            }
+                          ]
+                        },
+                        "state": {
+                          "id": "4294967298"
+                        }
+                      },
+                      {
+                        "id": "4294967303",
+                        "next-hops": {
+                          "next-hop": [
+                            {
+                              "index": "2380381826821612125",
+                              "state": {
+                                "index": "2380381826821612125",
+                                "weight": "1"
+                              }
+                            }
+                          ]
+                        },
+                        "state": {
+                          "id": "4294967303"
+                        }
+                      },
+                      {
+                        "id": "72057598332895237",
+                        "next-hops": {
+                          "next-hop": [
+                            {
+                              "index": "5572930868439189906",
+                              "state": {
+                                "index": "5572930868439189906",
+                                "weight": "1"
+                              }
+                            }
+                          ]
+                        },
+                        "state": {
+                          "id": "72057598332895237"
+                        }
+                      },
+                      {
+                        "id": "21474836485",
+                        "next-hops": {
+                          "next-hop": [
+                            {
+                              "index": "7001068232597371485",
+                              "state": {
+                                "index": "7001068232597371485",
+                                "weight": "1"
+                              }
+                            }
+                          ]
+                        },
+                        "state": {
+                          "id": "21474836485"
+                        }
+                      }
+                    ]
+                  },
+                  "next-hops": {
+                    "next-hop": [
+                      {
+                        "index": "9832892650124912434",
+                        "interface-ref": {
+                          "state": {
+                            "interface": "Management0"
+                          }
+                        },
+                        "state": {
+                          "index": "9832892650124912434",
+                          "ip-address": "0.0.0.0"
+                        }
+                      },
+                      {
+                        "index": "2380381826821612125",
+                        "interface-ref": {
+                          "state": {
+                            "interface": "Ethernet1"
+                          }
+                        },
+                        "state": {
+                          "index": "2380381826821612125",
+                          "ip-address": "0.0.0.0"
+                        }
+                      },
+                      {
+                        "index": "7001068232597371485",
+                        "interface-ref": {
+                          "state": {
+                            "interface": "Ethernet1"
+                          }
+                        },
+                        "state": {
+                          "index": "7001068232597371485",
+                          "ip-address": "10.0.0.2"
+                        }
+                      },
+                      {
+                        "index": "5572930868439189906",
+                        "interface-ref": {
+                          "state": {
+                            "interface": "Management0"
+                          }
+                        },
+                        "state": {
+                          "index": "5572930868439189906",
+                          "ip-address": "::"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "arista-exp-eos-varp-net-inst:arista-varp": {
+                  "config": {
+                    "virtual-mac-address": "00:00:00:00:00:00"
+                  },
+                  "state": {
+                    "virtual-mac-address": "00:00:00:00:00:00"
+                  }
+                },
+                "config": {
+                  "enabled": true,
+                  "enabled-address-families": [
+                    "openconfig-types:IPV4"
+                  ],
+                  "name": "default",
+                  "type": "openconfig-network-instance-types:DEFAULT_INSTANCE"
+                },
+                "mpls": {
+                  "global": {
+                    "reserved-label-blocks": {
+                      "reserved-label-block": [
+                        {
+                          "config": {
+                            "local-id": "l2evpn",
+                            "lower-bound": 1036288,
+                            "upper-bound": 1048575
+                          },
+                          "local-id": "l2evpn"
+                        },
+                        {
+                          "config": {
+                            "local-id": "static",
+                            "lower-bound": 16,
+                            "upper-bound": 99999
+                          },
+                          "local-id": "static"
+                        },
+                        {
+                          "config": {
+                            "local-id": "bgp-sr",
+                            "lower-bound": 900000,
+                            "upper-bound": 965535
+                          },
+                          "local-id": "bgp-sr"
+                        },
+                        {
+                          "config": {
+                            "local-id": "isis-sr",
+                            "lower-bound": 900000,
+                            "upper-bound": 965535
+                          },
+                          "local-id": "isis-sr"
+                        },
+                        {
+                          "config": {
+                            "local-id": "srlb",
+                            "lower-bound": 965536,
+                            "upper-bound": 1031071
+                          },
+                          "local-id": "srlb"
+                        },
+                        {
+                          "config": {
+                            "local-id": "dynamic",
+                            "lower-bound": 100000,
+                            "upper-bound": 362143
+                          },
+                          "local-id": "dynamic"
+                        },
+                        {
+                          "config": {
+                            "local-id": "l2evpnSharedEs",
+                            "lower-bound": 1031072,
+                            "upper-bound": 1032095
+                          },
+                          "local-id": "l2evpnSharedEs"
+                        }
+                      ]
+                    }
+                  },
+                  "signaling-protocols": {
+                    "rsvp-te": {
+                      "global": {
+                        "hellos": {
+                          "config": {
+                            "hello-interval": 10000
+                          },
+                          "state": {
+                            "hello-interval": 0,
+                            "refresh-reduction": false
+                          }
+                        },
+                        "soft-preemption": {
+                          "config": {
+                            "enable": true
+                          },
+                          "state": {
+                            "enable": true
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "name": "default",
+                "protocols": {
+                  "protocol": [
+                    {
+                      "config": {
+                        "identifier": "openconfig-policy-types:DIRECTLY_CONNECTED",
+                        "name": "DIRECTLY_CONNECTED"
+                      },
+                      "identifier": "openconfig-policy-types:DIRECTLY_CONNECTED",
+                      "name": "DIRECTLY_CONNECTED"
+                    },
+                    {
+                      "bgp": {
+                        "global": {
+                          "afi-safis": {
+                            "afi-safi": [
+                              {
+                                "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST",
+                                "config": {
+                                  "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST"
+                                },
+                                "state": {
+                                  "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST"
+                                }
+                              },
+                              {
+                                "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST",
+                                "config": {
+                                  "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST"
+                                },
+                                "state": {
+                                  "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST"
+                                }
+                              }
+                            ]
+                          },
+                          "config": {
+                            "as": 65001
+                          },
+                          "state": {
+                            "as": 65001,
+                            "router-id": "1.1.1.1"
+                          }
+                        },
+                        "neighbors": {
+                          "neighbor": [
+                            {
+                              "afi-safis": {
+                                "afi-safi": [
+                                  {
+                                    "afi-safi-name": "openconfig-bgp-types:L2VPN_EVPN",
+                                    "config": {
+                                      "afi-safi-name": "openconfig-bgp-types:L2VPN_EVPN"
+                                    },
+                                    "state": {
+                                      "afi-safi-name": "openconfig-bgp-types:L2VPN_EVPN",
+                                      "prefixes": {
+                                        "arista-bgp-augments:best-ecmp-paths": 0,
+                                        "arista-bgp-augments:best-paths": 0,
+                                        "installed": 0,
+                                        "received": 0,
+                                        "sent": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST",
+                                    "config": {
+                                      "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST"
+                                    },
+                                    "ipv4-unicast": {
+                                      "prefix-limit": {
+                                        "config": {
+                                          "arista-bgp-augments:warning-threshold": 0,
+                                          "arista-bgp-augments:warning-threshold-type": "ABSOLUTE",
+                                          "max-prefixes": 0,
+                                          "prevent-teardown": false
+                                        }
+                                      }
+                                    },
+                                    "state": {
+                                      "afi-safi-name": "openconfig-bgp-types:IPV4_UNICAST",
+                                      "prefixes": {
+                                        "arista-bgp-augments:best-ecmp-paths": 0,
+                                        "arista-bgp-augments:best-paths": 0,
+                                        "installed": 3,
+                                        "received": 3,
+                                        "sent": 3
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST",
+                                    "config": {
+                                      "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST"
+                                    },
+                                    "ipv6-unicast": {
+                                      "prefix-limit": {
+                                        "config": {
+                                          "arista-bgp-augments:warning-threshold": 0,
+                                          "arista-bgp-augments:warning-threshold-type": "ABSOLUTE",
+                                          "max-prefixes": 0,
+                                          "prevent-teardown": false
+                                        }
+                                      }
+                                    },
+                                    "state": {
+                                      "afi-safi-name": "openconfig-bgp-types:IPV6_UNICAST",
+                                      "prefixes": {
+                                        "arista-bgp-augments:best-ecmp-paths": 0,
+                                        "arista-bgp-augments:best-paths": 0,
+                                        "installed": 0,
+                                        "received": 0,
+                                        "sent": 0
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "arista-bgp-augments:prefix-limit": {
+                                "config": {
+                                  "max-prefixes": 256000,
+                                  "prevent-teardown": false,
+                                  "warning-threshold-pct": 80,
+                                  "warning-threshold-type": "PERCENTAGE"
+                                }
+                              },
+                              "config": {
+                                "neighbor-address": "10.0.0.2",
+                                "peer-as": 65002
+                              },
+                              "ebgp-multihop": {
+                                "config": {
+                                  "multihop-ttl": 0
+                                },
+                                "state": {
+                                  "multihop-ttl": 0
+                                }
+                              },
+                              "neighbor-address": "10.0.0.2",
+                              "state": {
+                                "established-transitions": "1",
+                                "last-established": "1652364063408884480",
+                                "messages": {
+                                  "received": {
+                                    "UPDATE": "2"
+                                  },
+                                  "sent": {
+                                    "UPDATE": "2"
+                                  }
+                                },
+                                "neighbor-address": "10.0.0.2",
+                                "peer-as": 65002,
+                                "session-state": "ESTABLISHED"
+                              },
+                              "transport": {
+                                "state": {
+                                  "remote-address": "10.0.0.2",
+                                  "remote-port": 179
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "config": {
+                        "identifier": "openconfig-policy-types:BGP",
+                        "name": "BGP"
+                      },
+                      "identifier": "openconfig-policy-types:BGP",
+                      "name": "BGP"
+                    }
+                  ]
+                },
+                "segment-routing": {
+                  "srgbs": {
+                    "srgb": [
+                      {
+                        "config": {
+                          "dataplane-type": "MPLS",
+                          "local-id": "isis-sr",
+                          "mpls-label-blocks": [
+                            "isis-sr"
+                          ]
+                        },
+                        "local-id": "isis-sr"
+                      }
+                    ]
+                  },
+                  "srlbs": {
+                    "srlb": [
+                      {
+                        "config": {
+                          "dataplane-type": "MPLS",
+                          "local-id": "srlb",
+                          "mpls-label-block": "srlb"
+                        },
+                        "local-id": "srlb"
+                      }
+                    ]
+                  }
+                },
+                "state": {
+                  "enabled": true
+                },
+                "table-connections": {
+                  "table-connection": [
+                    {
+                      "address-family": "openconfig-types:IPV4",
+                      "config": {
+                        "address-family": "openconfig-types:IPV4",
+                        "dst-protocol": "openconfig-policy-types:BGP",
+                        "src-protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                      },
+                      "dst-protocol": "openconfig-policy-types:BGP",
+                      "src-protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                    },
+                    {
+                      "address-family": "openconfig-types:IPV6",
+                      "config": {
+                        "address-family": "openconfig-types:IPV6",
+                        "dst-protocol": "openconfig-policy-types:BGP",
+                        "src-protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                      },
+                      "dst-protocol": "openconfig-policy-types:BGP",
+                      "src-protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                    }
+                  ]
+                },
+                "tables": {
+                  "table": [
+                    {
+                      "address-family": "openconfig-types:IPV4",
+                      "config": {
+                        "address-family": "openconfig-types:IPV4",
+                        "protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                      },
+                      "protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                    },
+                    {
+                      "address-family": "openconfig-types:IPV6",
+                      "config": {
+                        "address-family": "openconfig-types:IPV6",
+                        "protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                      },
+                      "protocol": "openconfig-policy-types:DIRECTLY_CONNECTED"
+                    },
+                    {
+                      "address-family": "openconfig-types:IPV4",
+                      "config": {
+                        "address-family": "openconfig-types:IPV4",
+                        "protocol": "openconfig-policy-types:BGP"
+                      },
+                      "protocol": "openconfig-policy-types:BGP"
+                    },
+                    {
+                      "address-family": "openconfig-types:IPV6",
+                      "config": {
+                        "address-family": "openconfig-types:IPV6",
+                        "protocol": "openconfig-policy-types:BGP"
+                      },
+                      "protocol": "openconfig-policy-types:BGP"
+                    }
+                  ]
+                },
+                "vlans": {
+                  "vlan": [
+                    {
+                      "config": {
+                        "name": "default",
+                        "vlan-id": 1
+                      },
+                      "state": {
+                        "name": "default",
+                        "vlan-id": 1
+                      },
+                      "vlan-id": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

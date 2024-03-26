@@ -1,0 +1,287 @@
+
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363863777179655,
+  "time": "2022-05-12T09:57:43.777179655-04:00",
+  "prefix": "interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "in-broadcast-pkts",
+      "values": {
+        "in-broadcast-pkts": 0
+      }
+    },
+    {
+      "Path": "in-discards",
+      "values": {
+        "in-discards": 0
+      }
+    },
+    {
+      "Path": "in-errors",
+      "values": {
+        "in-errors": 0
+      }
+    },
+    {
+      "Path": "in-fcs-errors",
+      "values": {
+        "in-fcs-errors": 0
+      }
+    },
+    {
+      "Path": "in-multicast-pkts",
+      "values": {
+        "in-multicast-pkts": 0
+      }
+    },
+    {
+      "Path": "out-broadcast-pkts",
+      "values": {
+        "out-broadcast-pkts": 0
+      }
+    },
+    {
+      "Path": "out-discards",
+      "values": {
+        "out-discards": 0
+      }
+    },
+    {
+      "Path": "out-errors",
+      "values": {
+        "out-errors": 0
+      }
+    },
+    {
+      "Path": "out-multicast-pkts",
+      "values": {
+        "out-multicast-pkts": 0
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363863777253252,
+  "time": "2022-05-12T09:57:43.777253252-04:00",
+  "updates": [
+    {
+      "Path": "interfaces/interface[name=Ethernet1]/state/counters/in-unicast-pkts",
+      "values": {
+        "interfaces/interface/state/counters/in-unicast-pkts": 53
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363863777249365,
+  "time": "2022-05-12T09:57:43.777249365-04:00",
+  "prefix": "interfaces/interface[name=Ethernet1]/state/counters",
+  "updates": [
+    {
+      "Path": "in-multicast-pkts",
+      "values": {
+        "in-multicast-pkts": 130
+      }
+    },
+    {
+      "Path": "in-octets",
+      "values": {
+        "in-octets": 19049
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363863777206966,
+  "time": "2022-05-12T09:57:43.777206966-04:00",
+  "prefix": "interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "in-octets",
+      "values": {
+        "in-octets": 171525
+      }
+    },
+    {
+      "Path": "in-unicast-pkts",
+      "values": {
+        "in-unicast-pkts": 2089
+      }
+    },
+    {
+      "Path": "out-octets",
+      "values": {
+        "out-octets": 2487399
+      }
+    },
+    {
+      "Path": "out-unicast-pkts",
+      "values": {
+        "out-unicast-pkts": 1988
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363863777241279,
+  "time": "2022-05-12T09:57:43.777241279-04:00",
+  "prefix": "interfaces/interface[name=Ethernet1]/state/counters",
+  "updates": [
+    {
+      "Path": "in-broadcast-pkts",
+      "values": {
+        "in-broadcast-pkts": 0
+      }
+    },
+    {
+      "Path": "in-discards",
+      "values": {
+        "in-discards": 0
+      }
+    },
+    {
+      "Path": "in-errors",
+      "values": {
+        "in-errors": 0
+      }
+    },
+    {
+      "Path": "in-fcs-errors",
+      "values": {
+        "in-fcs-errors": 0
+      }
+    },
+    {
+      "Path": "out-broadcast-pkts",
+      "values": {
+        "out-broadcast-pkts": 0
+      }
+    },
+    {
+      "Path": "out-discards",
+      "values": {
+        "out-discards": 0
+      }
+    },
+    {
+      "Path": "out-errors",
+      "values": {
+        "out-errors": 0
+      }
+    },
+    {
+      "Path": "out-multicast-pkts",
+      "values": {
+        "out-multicast-pkts": 0
+      }
+    },
+    {
+      "Path": "out-octets",
+      "values": {
+        "out-octets": 0
+      }
+    },
+    {
+      "Path": "out-unicast-pkts",
+      "values": {
+        "out-unicast-pkts": 0
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363864333284929,
+  "time": "2022-05-12T09:57:44.333284929-04:00",
+  "prefix": "openconfig:interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "out-octets",
+      "values": {
+        "out-octets": 2489468
+      }
+    },
+    {
+      "Path": "out-unicast-pkts",
+      "values": {
+        "out-unicast-pkts": 2000
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363864333240596,
+  "time": "2022-05-12T09:57:44.333240596-04:00",
+  "prefix": "openconfig:interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "in-octets",
+      "values": {
+        "in-octets": 172673
+      }
+    },
+    {
+      "Path": "in-unicast-pkts",
+      "values": {
+        "in-unicast-pkts": 2102
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363865333500469,
+  "time": "2022-05-12T09:57:45.333500469-04:00",
+  "prefix": "openconfig:interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "out-octets",
+      "values": {
+        "out-octets": 2490008
+      }
+    },
+    {
+      "Path": "out-unicast-pkts",
+      "values": {
+        "out-unicast-pkts": 2003
+      }
+    }
+  ]
+}
+{
+  "source": "172.20.20.2:6030",
+  "subscription-name": "default-1652363863",
+  "timestamp": 1652363865333468720,
+  "time": "2022-05-12T09:57:45.33346872-04:00",
+  "prefix": "openconfig:interfaces/interface[name=Management0]/state/counters",
+  "updates": [
+    {
+      "Path": "in-octets",
+      "values": {
+        "in-octets": 172901
+      }
+    },
+    {
+      "Path": "in-unicast-pkts",
+      "values": {
+        "in-unicast-pkts": 2105
+      }
+    }
+  ]
+}
+
+received signal 'interrupt'. terminating...
