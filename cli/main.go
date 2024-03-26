@@ -42,11 +42,18 @@ func main() {
 	}
 	if *addtarget {
 		NewDev := models.NewTarget{
-			Name:     *target,
-			Address:  *target,
-			Username: *username,
-			Password: *password,
-			Insecure: *insecure,
+			Name:         *target,
+			Address:      *target,
+			Username:     *username,
+			Password:     *password,
+			Insecure:     *insecure,
+			Skipverify:   true,
+			Buffersize:   100,
+			RetryTimer:   10000000000,
+			Logtlssecret: false,
+			Gzip:         false,
+			Timeout:      10000000000,
+			Token:        "",
 		}
 		Rest.PostTarget(NewDev)
 	}

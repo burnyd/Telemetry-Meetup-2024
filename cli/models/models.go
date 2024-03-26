@@ -42,9 +42,16 @@ type Leader struct {
 }
 
 type NewTarget struct {
-	Name string `json:"name"`
-	Address string `json:"address"`
-	Username string `json:"username"`
-	Password string `json:"password"`
-	Insecure bool `json:"insecure"`
+	Name         string `json:"name"`
+	Address      string `json:"address"`
+	Username     string `json:"username"`
+	Password     string `json:"password"`
+	Insecure     bool   `json:"insecure"`
+	Skipverify   bool   `json:"skip-verify"`
+	Buffersize   int    `json:"buffer-size"`
+	RetryTimer   int    `json:"retry-timer"`
+	Logtlssecret bool   `json:"log-tls-secret"`
+	Gzip         bool   `json:"gzip"`
+	Token        string `json:"token"`
+	Timeout      int    `json:"timeout"`
 }

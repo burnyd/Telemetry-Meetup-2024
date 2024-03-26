@@ -105,7 +105,8 @@ curl --request GET $GNMICAPI1:7890/api/v1/config/subscriptions | jq .
 
 Add a target
 ```
-curl -X POST -H "Content-Type: application/json" -d ' {"name":"172.20.20.4:6030","address":"172.20.20.4:6030","username":"admin","password":"admin","insecure": true}'  $GNMICAPI1:7890/api/v1/config/targets
+curl -X POST -H "Content-Type: application/json" -d ' {"name":"172.20.20.4:6030","address":"172.20.20.4:6030","username":"admin","password":"admin","timeout": 10000000000,"insecure": true,"skip-verify": true,"buffer-size": 100,"retry-timer": 10000000000,"log-tls-secret": false,"gzip": false,"token": ""}' $GNMICAPI3:7890/api/v1/config/targets
+
 ```
 
 Delete a target
