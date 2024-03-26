@@ -44,7 +44,6 @@ topology:
       binds:
         - ./gnmic.yaml:/app/gnmic.yaml:ro
         - ./targets-config.yaml:/app/targets-config.yaml:ro
-        - /var/run/docker.sock:/var/run/docker.sock
       ports:
         - 7890:7890
       env:
@@ -60,7 +59,6 @@ topology:
       binds:
         - ./gnmic.yaml:/app/gnmic.yaml:ro
         - ./targets-config.yaml:/app/targets-config.yaml:ro
-        - /var/run/docker.sock:/var/run/docker.sock
       ports:
         - 7891:7891
       env:
@@ -76,7 +74,6 @@ topology:
       binds:
         - ./gnmic.yaml:/app/gnmic.yaml:ro
         - ./targets-config.yaml:/app/targets-config.yaml:ro
-        - /var/run/docker.sock:/var/run/docker.sock
       ports:
         - 7892:7892
       env:
