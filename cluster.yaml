@@ -108,6 +108,16 @@ topology:
         --web.console.templates=/usr/share/prometheus/consoles
         --log.level=debug
 
+    grafana:
+      kind: linux
+      image: grafana/grafana:latest
+      binds:
+        - grafana/cluster/datasources/datasource.yaml:/etc/grafana/provisioning/datasources/datasource.yaml:ro
+        #- grafana/cluster/dashboards/dashboard.json:/var/lib/grafana/dashboards/dashboard.json:rw
+        #- grafana/cluster/dashboards/dashboard.json:/var/lib/grafana/dashboard.json:rw
+      ports:
+        - 3001:3000
+
   links:
     - endpoints: ["ceos1:eth1", "ceos2:eth1"]
     - endpoints: ["ceos2:eth2", "ceos3:eth1"]
